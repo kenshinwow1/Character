@@ -7,22 +7,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFA500;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #FFA500;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx.HelloController">
    <children>
-      <AnchorPane layoutY="99.0" prefHeight="299.0" prefWidth="700.0" style="-fx-background-color: #A52A2A;">
+      <AnchorPane layoutY="99.0" prefHeight="299.0" prefWidth="700.0" style="-fx-background-color: #EFEB67;">
          <children>
-            <TextField layoutX="200.0" layoutY="90.0" prefHeight="45.0" prefWidth="277.0" promptText="log" style="-fx-background-color: #FFFFFF; -fx-border-color: silver;">
+            <TextField fx:id="login_field" layoutX="200.0" layoutY="90.0" prefHeight="45.0" prefWidth="277.0" promptText="log" style="-fx-background-color: #FFFFFF; -fx-border-color: silver;">
                <font>
                   <Font size="16.0" />
                </font>
             </TextField>
-            <PasswordField layoutX="200.0" layoutY="160.0" prefHeight="45.0" prefWidth="277.0" promptText="pass" style="-fx-background-color: #FFFFFF; -fx-border-color: silver; -fx-border-radius: 5;">
+            <PasswordField fx:id="password_field" layoutX="200.0" layoutY="160.0" prefHeight="45.0" prefWidth="277.0" promptText="pass" style="-fx-background-color: #FFFFFF; -fx-border-color: silver; -fx-border-radius: 5;">
                <font>
                   <Font size="16.0" />
                </font>
             </PasswordField>
-            <Button layoutX="281.0" layoutY="227.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #008000;" text="Create" textFill="WHITE">
+            <Button fx:id="CreateSiglnButton" layoutX="281.0" layoutY="227.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="116.0" style="-fx-background-color: #008000;" text="Create" textFill="WHITE">
                <font>
                   <Font name="System Bold Italic" size="18.0" />
                </font>
@@ -34,5 +33,10 @@
             <Font name="System Italic" size="67.0" />
          </font>
       </Label>
+      <Button fx:id="PlaySingUpButton" layoutX="539.0" layoutY="5.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="147.0" style="-fx-background-color: #FF0F0F;" text="Play" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>
